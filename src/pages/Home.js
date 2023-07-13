@@ -18,30 +18,12 @@ function Home() {
       {/* Second image */}
       <div className="home2" style={{ backgroundImage: `url(${SecondBackground})` }}>
         <div className="headerContainer">
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+          <br/><br/><br/><br/>
+          <br/><br/><br/><br/>
+          <br/><br/><br/><br/>
+          <br/><br/><br/><br/>
+          <br/><br/><br/><br/>
+          <br/><br/><br/><br/>
           <h1> We present to you </h1>
           <p> Epsilon </p>
           <p> The first Luxury AI powered assistance Bot </p>

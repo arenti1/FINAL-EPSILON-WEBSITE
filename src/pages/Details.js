@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {ProductConsumer} from '../context';
 import {Link} from 'react-router-dom';
-import {ButtonContainer} from './Button';
+import {ButtonContainer} from '../components/Button';
 
 export default class Details extends Component {
     render() {
@@ -53,7 +53,7 @@ export default class Details extends Component {
                                                     value.openModal(id);
                                                 }}>
                                                {inCart ? "inCart" : "add to cart"}
-                                            </ButtonContainer>
+                                            </ButtonContainer> 
                                     </div>
                                 </div>
                             </div>
