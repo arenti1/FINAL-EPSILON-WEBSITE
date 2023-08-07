@@ -8,6 +8,7 @@ import {ProductProvider} from './context';
 
 ReactDOM.render(
     <ProductProvider>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" />
         <Router>
             <App />
         </Router>

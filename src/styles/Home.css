@@ -1,144 +1,58 @@
+.background {
+  justify-content: flex-start;
+  height: 100vh; /* Set height to 100% of the viewport height */
+  background: linear-gradient(to top, gray, white 60%);
+}
+
+
 .home {
-  width: 100%;
-  height: 90vh;
   display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 60%;
 }
 
-.home2 {
-  width: 100%;
-  height: 90vh;
+.title {
+  padding-top: 100px;
+  flex: 6
+}
+
+.MainText {
+  padding-top: 100px;
+  padding-left: 100px;
+  font-family: 'Yeseva One', cursive;
+  font-size: 50px;
+}
+
+.title h4 {
+  padding-left: 100px;
+}
+
+.interactiveModel {
   display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding-bottom: 30%;
-}
-
-.headerContainer {
-  width: auto;
-  margin-left: 50px;
-}
-
-.headerContainer h1 {
-  font-family: 'Times New Roman', Times, serif;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 70px;
-  height: 60px;
-  font-weight: 50;
-  color: white;
+  flex: 4
 }
 
-.headerContainer p {
-  font-family: 'Times New Roman', Times, serif;
-  padding: 0;
-  text-align: center;
-  justify-content: center;
-  font-size: 60px;
-  font-weight: lighter;
-  color: white;
+.interactiveModel img {
+  max-width: 100%;
+  height: auto;
 }
 
-.headerContainer button {
-  color: black;
+.exploreButton {
+  margin-top: 30px;
+  margin-left: 100px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: green;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  justify-content: center;
-  background-color: #121619;
-  height: 50px;
-  width: 180px;
-  color: white;
   text-decoration: none;
-  font-size: 20px;
-  text-align: center;
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 30;
+  font-weight:900;
+  border-radius: 5px;
 }
 
-
-.headerContainer button:hover {
-  background-color: #07090a;
-  cursor: pointer;
-  transition: 0.3s ease-in;
-}
-
-@media only screen and (max-width: 650px) {
-  .home {
-    justify-content: center;
-    align-items: center;
-  }
-  .headerContainer h1,
-  .headerContainer p {
-  }
-
-  .headerContainer {
-    margin-left: 0px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #121619;
-    color: white;
-  }
-
-  .headerContainer h1 {
-    font-size: 40px;
-    height: 30px;
-    color: white;
-  }
-
-  .headerContainer p {
-    font-size: 30px;
-    color: white;
-  }
-
-  .headerContainer button {
-    background-color: white;
-    color: #121619;
-    margin-bottom: 30px;
-  }
-
-  .headerContainer button:hover {
-    background-color: rgb(225, 225, 225);
-    color: #121619;
-  }
-}
-
-.cursor__dot div {
-  z-index: 999999 !important;
-}
-
-.cursor__dot div:last-child {
-  background-color: var(--text-color-3) !important;
-}
-
-.cursor__dot div:first-child {
-  filter: invert(1);
-  background-color: var(--overlay-color) !important;
-}
-
-.color_pr {
-  color: var(--primary-color) !important;
-}
-
-.color_sec {
-  color: var(--secondary-color);
-}
+/* 
+  justify-content: center;  Center children horizontally 
+  align-items: center;  Center children vertically
+*/

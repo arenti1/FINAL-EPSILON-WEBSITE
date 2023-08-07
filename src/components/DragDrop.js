@@ -4,6 +4,8 @@ import { useDrop } from 'react-dnd'
 import Picture from './Picture'
 import "../styles/Customize.css"
 
+import robot from "../img/2.jpg"
+
 
 const PictureList = [
     {
@@ -43,7 +45,7 @@ function DragDrop() {
             })} 
         </div>
 
-        <div className='Board' ref={drop}> 
+        <div className='Board' ref={drop} style={{ backgroundImage: `url(${robot})` }}> 
             {board.map((picture) => {
                 return <Picture url={picture.url} id={picture.id}/>
             })}
@@ -54,3 +56,4 @@ function DragDrop() {
 }
 
 export default DragDrop
+//<img className="BoardImg" src="../img/2.jpg"></img>

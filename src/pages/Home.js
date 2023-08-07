@@ -1,42 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import FirstBackground from "../img/FirstBackground.jpg";
-import SecondBackground from "../img/SecondBackground.jpg";
+import TestSkull from "../img/TestSkull.png"
 import "../styles/Home.css";
+import { Link } from "react-router-dom";
+
 
 function Home() {
+  
   return (
-    <div>
-      <div className="home" style={{ backgroundImage: `url(${FirstBackground})` }}>
-        <div className="headerContainer">
-          <h1> Curious to see what you get when you combine </h1>
-          <p> Luxury & AI & Robotics </p>
-        </div>
-        
+    <div className="background">
+      <div className="home">
+        <div className="title">
+          <h1 className="MainText">
+            What happens when you combine<br/>
+            Luxury Ai and Robotics
+          </h1>
 
-      </div>
-      {/* Second image */}
-      <div className="home2" style={{ backgroundImage: `url(${SecondBackground})` }}>
-        <div className="headerContainer">
-          <br/><br/><br/><br/>
-          <br/><br/><br/><br/>
-          <br/><br/><br/><br/>
-          <br/><br/><br/><br/>
-          <br/><br/><br/><br/>
-          <br/><br/><br/><br/>
-          <h1> We present to you </h1>
-          <p> Epsilon </p>
-          <p> The first Luxury AI powered assistance Bot </p>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+          <h4>
+            Find the perfect Home Assistant / Companion to fit their<br/>
+            leaving room
+          </h4>
 
-          <Link to="/market">
-            <button> Preorder Now </button>
-          </Link>
+          <Link className="exploreButton" to="/market"> Explore Now </Link>
+
+
         </div>
-        
+
+        <div className="interactiveModel">
+          <img src={TestSkull} alt="Interactive 3d Model"/>
+
+        </div>
+
       </div>
     </div>
   );

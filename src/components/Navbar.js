@@ -1,39 +1,20 @@
-import React, { useState } from "react";
-import Logo from "../img/EpsilonLogo.png";
-import Cart from "../img/CART.png"
+import React from "react";
+import EpsilonLogo from "../img/EpsilonLogo.png";
+import ProfileIcon from "../img/ProfileIcon.png"
 import { Link } from "react-router-dom";
-import ReorderIcon from "@material-ui/icons/Reorder";
 import "../styles/Navbar.css";
 
 function Navbar() {
-  const [openLinks, setOpenLinks] = useState(false);
 
-  const toggleNavbar = () => {
-    setOpenLinks(!openLinks);
-  };
   return (
-    <div className="navbar2">
-      <div className="leftSide" id={openLinks ? "open" : "close"}>
-        <img src={Logo} />
-        <div className="hiddenLinks">
-          <Link to="/"> Home </Link>
-          <Link to="/market"> Products </Link>
-          <Link to="/about"> About </Link>
-          <Link to="/contact"> Contact </Link>
-        </div>
-      </div>
-      <div className="rightSide">
-        <Link to="/"> Home </Link>
-        <Link to="/market"> Products </Link>
-        <Link to="/about"> About </Link>
-        <Link to="/contact"> Contact </Link>
-        <Link to="/cart">
-          <img src={Cart} width="50" height="30"/>
-        </Link>
-        <button onClick={toggleNavbar}>
-          <ReorderIcon />
-        </button>
-      </div>
+    <div className="menu">
+      <Link to="/"> <img src={EpsilonLogo} alt="Epsilon Logo"/> </Link>
+      <Link to="/store"> Store </Link>
+      <Link to="/epsibot"> EpsiBot </Link>
+      <Link to="/epsiplus"> Epsi+ </Link>
+      <Link to="/accessories"> Accessories </Link>
+      <Link to="/support"> Support </Link>
+      <Link to="/profile"> <img src={ProfileIcon} width="50" height="30" alt="Profile Icon"/> </Link>
     </div>
   );
 }
