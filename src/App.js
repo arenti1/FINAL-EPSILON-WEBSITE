@@ -15,9 +15,9 @@ import Contact from "./pages/Contact";
 import Customize from "./pages/Customize"
 
 import Store from "./pages/new/Store"
-import EpsiBot from "./pages/new/EpsiBot"
+import EpsiBot from "./pages/EpsiBot"
 import EpsiPlus from "./pages/new/EpsiPlus"
-import Accessories from "./pages/new/Accessories"
+import Accessories from "./pages/Accessories"
 import Support from "./pages/new/Support"
 
 function App() {

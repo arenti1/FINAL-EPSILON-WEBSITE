@@ -12,9 +12,10 @@
     "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^5.0.1",
+    "react-three-fiber": "^6.0.13",
     "styled-components": "^4.3.2",
-    "three": "^0.154.0",
+    "three": "^0.155.0",
     "three-gltf-loader": "^1.111.0"
   },
   "scripts": {
